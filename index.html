@@ -1,0 +1,18 @@
+<style>
+.dialog-body {
+  position: absolute; left: 20%; top: 0; width: 60%; height: 60%; padding: 32px;
+  box-shadow: 2px 4px 16px gray; box-sizing: border-box; font-size: 18px;
+}
+div, button { transition: transform 0.1s linear, opacity 0.1s linear; }
+.button {
+  position: absolute; right: 20%; bottom: 40%; width: 100px; height: 50px; margin: 32px; z-index: 999;
+  border-radius: 4px; font-size: 32px; background: #4688F1; color: white; cursor: pointer;
+}
+.button:active, .button:active+div { transform: translate(0, -60vh); opacity: 0; }
+</style>
+<button class='button'>OK</button>
+<div class='dialog-body'>
+  ババババ<br>
+  しゅっしゅっ<br>
+  何回閉じても無駄ですよー
+</div>
